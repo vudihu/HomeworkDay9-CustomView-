@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InformationView" customModule="HomeworkDay9_Contact_" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wka-Cn-kCW">
+                    <rect key="frame" x="24" y="12" width="327" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="78i-bM-udE">
+                    <rect key="frame" x="24" y="49" width="327" height="50"/>
+                    <color key="backgroundColor" red="0.94509803921568625" green="0.95294117647058818" blue="0.9882352941176471" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="x3B-96-Ics"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="78i-bM-udE" firstAttribute="top" secondItem="wka-Cn-kCW" secondAttribute="bottom" constant="15" id="Bfe-va-Rql"/>
+                <constraint firstItem="wka-Cn-kCW" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="327/375" id="RhJ-Q2-lq0"/>
+                <constraint firstItem="78i-bM-udE" firstAttribute="leading" secondItem="wka-Cn-kCW" secondAttribute="leading" id="eB9-3M-9gF"/>
+                <constraint firstAttribute="bottom" secondItem="78i-bM-udE" secondAttribute="bottom" constant="12" id="l9p-VJ-vOy"/>
+                <constraint firstItem="wka-Cn-kCW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="12" id="lv2-A4-arY"/>
+                <constraint firstItem="78i-bM-udE" firstAttribute="trailing" secondItem="wka-Cn-kCW" secondAttribute="trailing" id="xOI-wd-bCw"/>
+                <constraint firstItem="wka-Cn-kCW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="xjI-na-8Yh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="wka-Cn-kCW" id="AZM-34-s6u"/>
+                <outlet property="titleTextFeld" destination="78i-bM-udE" id="4dh-8t-9F2"/>
+            </connections>
+            <point key="canvasLocation" x="125.95419847328243" y="-241.19718309859155"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
